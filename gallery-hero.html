@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Guides</title>
+    <title>Gallery</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -6241,7 +6241,7 @@
                   <!-- NAVBAR BUTTON FOR EQUIPMENT TYPE TAB -->
                   <ul
                     class="nav nav-tabs d-flex flex-nowrap justify-content-between overflow-auto shadow hidden-scrollbar"
-                    id="heroTab"
+                    id="equipmentTab"
                     role="tablist"
                   >
                     <li class="nav-item" role="presentation">
@@ -6381,12 +6381,33 @@
                               </figcaption>
                             </figure>
                             <!-- Modal -->
-                            <div class="modal fade" id="sea-helberg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="sea-helberg" tabindex="-1" aria-labelledby="seaHelbergCard" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
+                                <div class="modal-content bg-transparent">
                                   
-                                  <div class="modal-body position-relative">
-                                    <i class="fa-solid fa-xmark fa-xl position-absolute end-0 me-2" type="button" data-bs-dismiss="modal"></i>
+                                  <div class="modal-body position-relative p-0 text-light">
+                                    <div class="card w-100">
+                                      <h5 class="card-title bg-primary align-self-center px-4 rounded-pill">Sea Helberg</h5>
+                                      <figure class="w-100 d-flex flex-column align-items-center px-3">
+                                        <img src="https://zathong.com/wp-content/uploads/2021/06/Sea_Halberd-e1622948887564.png" class="card-img-top" alt="Sea Helberg">
+                                        <figcaption class="bg-primary small w-100 text-center mt-2">Healing reduction</figcaption>
+                                      </figure>
+                                      <div class="card-body m-0 p-0 pb-2 w-100 px-3">
+                                        <div class="row"><div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase small fw-bold">stats</p>
+                                          <p class="m-0">+70 Physical ATK</p>
+                                          <p class="m-0">	+25% Attack Speed</p>
+                                        </div>
+                                        <div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase fw-bold small">passive</p>
+                                          <p class="m-0 mb-2 truncate-2 small"><span class="fw-bold">Life Drain: </span>Upon dealing damage to the target, reduces Shield and HP Regen of the target by 50% for 3s.</p>
+                                          <p class="m-0 truncate-2 small"><span class="fw-bold">Punish: </span>Increase damage by 8% against enemy heroes with higher extra HP.</p>
+                                        </div>
+                                      </div>
+                                        
+                                      </div>
+                                    </div>
+                                    <i class="fa-solid fa-xmark fa-xl position-absolute end-0 top-0 mt-3 me-2" type="button" data-bs-dismiss="modal"></i>
                                   </div>
                                 </div>
                               </div>
@@ -6400,6 +6421,8 @@
                                 alt="WindTalker"
                                 loading="lazy"
                                 type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#windtalker"
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6407,6 +6430,39 @@
                                 WindTalker
                               </figcaption>
                             </figure>
+                            <!-- Modal -->
+                            <div class="modal fade" id="windtalker" tabindex="-1" aria-labelledby="windtalker" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-transparent">
+                                  
+                                  <div class="modal-body position-relative p-0 text-light">
+                                    <div class="card w-100">
+                                      <h5 class="card-title bg-primary align-self-center px-4 rounded-pill">Windtalker</h5>
+                                      <figure class="w-100 d-flex flex-column align-items-center px-3">
+                                        <img src="https://zathong.com/wp-content/uploads/2021/06/Windtalker-e1622948681212.png" class="card-img-top" alt="Windtalker">
+                                        <figcaption class="bg-primary small w-100 text-center mt-2">Basic attack triggers splash damage</figcaption>
+                                      </figure>
+                                      <div class="card-body m-0 p-0 pb-2 w-100 px-3">
+                                        <div class="row"><div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase small fw-bold">stats</p>
+                                          <p class="m-0">	+40% Attack Speed</p>
+                                          <p class="m-0">	+10% Crit Chance</p>
+                                          <p class="m-0">	+20 Movement SPD</p>
+                                        </div>
+                                        <div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase fw-bold small">passive</p>
+                                          <p class="m-0 mb-2 truncate-2 small"><span class="fw-bold">Typhoon: </span>Every 5-2s (reduced by 0.2 for each basic attack), the next Basic Attack hits up to 3 enemy units and deals 150-362 Magic damage. (This attack can critically strike and the damage increases to 200% against Minions.)</p>
+                                          <p class="m-0 truncate-2 small"><span class="fw-bold">Activate: </span>Each time Typhoon is cast, one's movement speed will be increased 5% for a short time.</p>
+                                        </div>
+                                      </div>
+                                        
+                                      </div>
+                                    </div>
+                                    <i class="fa-solid fa-xmark fa-xl position-absolute end-0 top-0 mt-3 me-2" type="button" data-bs-dismiss="modal"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </li>
                           <li>
                             <figure>
@@ -6416,6 +6472,8 @@
                                 alt="Wind of Nature"
                                 loading="lazy"
                                 type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#wind-of-nature"
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6423,6 +6481,38 @@
                                 Wind of Nature
                               </figcaption>
                             </figure>
+                            <!-- Modal -->
+                            <div class="modal fade" id="wind-of-nature" tabindex="-1" aria-labelledby="wind-of-nature" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-transparent">
+                                  
+                                  <div class="modal-body position-relative p-0 text-light">
+                                    <div class="card w-100">
+                                      <h5 class="card-title bg-primary align-self-center px-4 rounded-pill">Wind of Nature</h5>
+                                      <figure class="w-100 d-flex flex-column align-items-center px-3">
+                                        <img src="https://zathong.com/wp-content/uploads/2021/06/Wind_of_Nature-e1622948697348.png" class="card-img-top" alt="Wind of Nature">
+                                        <figcaption class="bg-primary small w-100 text-center mt-2">Immune to Physical ATK</figcaption>
+                                      </figure>
+                                      <div class="card-body m-0 p-0 pb-2 w-100 px-3">
+                                        <div class="row"><div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase small fw-bold">stats</p>
+                                          <p class="m-0">	+30 Physical ATK</p>
+                                          <p class="m-0">	+20% Attack Speed</p>
+                                          <p class="m-0">	+10% Physical Lifesteal</p>
+                                        </div>
+                                        <div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase fw-bold small">active</p>
+                                          <p class="m-0 mb-2 small"><span class="fw-bold">Wind Chant: </span>Immune to all Physical Damage. Last 2s. (Duration becomes half when used by non-marksmen). CD 70s</p>
+                                        </div>
+                                      </div>
+                                        
+                                      </div>
+                                    </div>
+                                    <i class="fa-solid fa-xmark fa-xl position-absolute end-0 top-0 mt-3 me-2" type="button" data-bs-dismiss="modal"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </li>
                           <li>
                             <figure>
@@ -6432,6 +6522,8 @@
                                 alt="Twilight Armor"
                                 loading="lazy"
                                 type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#twilight-armor"
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6439,6 +6531,37 @@
                                 Twilight Armor
                               </figcaption>
                             </figure>
+                            <!-- Modal -->
+                            <div class="modal fade" id="twilight-armor" tabindex="-1" aria-labelledby="twilight-armor" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content bg-transparent">
+                                  
+                                  <div class="modal-body position-relative p-0 text-light">
+                                    <div class="card w-100">
+                                      <h5 class="card-title bg-primary align-self-center px-4 rounded-pill">Twilight Armor</h5>
+                                      <figure class="w-100 d-flex flex-column align-items-center px-3">
+                                        <img src="https://zathong.com/wp-content/uploads/2021/06/Twilight_Armor-e1622948767662.png" class="card-img-top" alt="Twilight Armor">
+                                        <figcaption class="bg-primary small w-100 text-center mt-2">Resist Single Burst</figcaption>
+                                      </figure>
+                                      <div class="card-body m-0 p-0 pb-2 w-100 px-3">
+                                        <div class="row"><div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase small fw-bold">stats</p>
+                                          <p class="m-0">	+1200 HP</p>
+                                          <p class="m-0">	+20 Physical Defense</p>
+                                        </div>
+                                        <div class="col">
+                                          <p class="bg-primary text-center m-0 text-uppercase fw-bold small">passive</p>
+                                          <p class="m-0 mb-2 small"><span class="fw-bold">Twilight: </span>When taking more than 600 damage in a single hit, the excess amount will be reduced by 300 +5% of Max HP. Cooldown: 5s.</p>
+                                        </div>
+                                      </div>
+                                        
+                                      </div>
+                                    </div>
+                                    <i class="fa-solid fa-xmark fa-xl position-absolute end-0 top-0 mt-3 me-2" type="button" data-bs-dismiss="modal"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </li>
                           <li>
                             <figure>
@@ -6448,6 +6571,7 @@
                                 alt="Thunder Belt"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6464,6 +6588,7 @@
                                 alt="Scarlet Phantom"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6480,6 +6605,7 @@
                                 alt="Rose Gold Meteor"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6496,6 +6622,7 @@
                                 alt="Queen's Wings"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6512,6 +6639,7 @@
                                 alt="Oracle"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6528,6 +6656,7 @@
                                 alt="Necklace of Durance"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6544,6 +6673,7 @@
                                 alt="Malefic Roar"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6560,6 +6690,7 @@
                                 alt="Ice Queen Wand"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6576,6 +6707,7 @@
                                 alt="Hunter Strike"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6592,6 +6724,7 @@
                                 alt="Holy Crystal"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6608,6 +6741,7 @@
                                 alt="Haas's Claw"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6624,6 +6758,7 @@
                                 alt="Guardian Helmet"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6640,6 +6775,7 @@
                                 alt="Golden Staff"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6656,6 +6792,7 @@
                                 alt="Glowing Wand"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6672,6 +6809,7 @@
                                 alt="Genius Wand"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6688,6 +6826,7 @@
                                 alt="Fleeting Time"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6704,6 +6843,7 @@
                                 alt="Feather of Heaven"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6720,6 +6860,7 @@
                                 alt="Endless Battle"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6736,6 +6877,7 @@
                                 alt="Enchanted Talisman"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6752,6 +6894,7 @@
                                 alt="Dominance Ice"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6768,6 +6911,7 @@
                                 alt="Divine Glaive"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6784,6 +6928,7 @@
                                 alt="Demon Hunter Sword"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6800,6 +6945,7 @@
                                 alt="Cursed Helmet"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6816,6 +6962,7 @@
                                 alt="Corrosion Scythe"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6832,6 +6979,7 @@
                                 alt="Concentrated Energy"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6848,6 +6996,7 @@
                                 alt="Clock of Destiny"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6864,6 +7013,7 @@
                                 alt="Calamity Reaper"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6880,6 +7030,7 @@
                                 alt="Brute Force Breastplate"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6896,6 +7047,7 @@
                                 alt="Bloodlust Axe"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6912,6 +7064,7 @@
                                 alt="Blade of Despair"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6928,6 +7081,7 @@
                                 alt="Blood Wings"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6944,6 +7098,7 @@
                                 alt="Blade Armor"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6960,6 +7115,7 @@
                                 alt="Blade of the Heptaseas"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6976,6 +7132,7 @@
                                 alt="Berserker's Fury"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -6992,6 +7149,7 @@
                                 alt="Athena's Shield"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7008,6 +7166,7 @@
                                 alt="Antique Quirass"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7024,6 +7183,7 @@
                                 alt="War Axe"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7040,6 +7200,7 @@
                                 alt="Radiant Armor"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7056,6 +7217,7 @@
                                 alt="Shadow Twinblades"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7072,6 +7234,7 @@
                                 alt="Immortality"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7088,6 +7251,7 @@
                                 alt="Lightning Truncheon"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7104,6 +7268,7 @@
                                 alt="Winter Truncheon"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7120,6 +7285,7 @@
                                 alt="Demon Shoes"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7136,6 +7302,7 @@
                                 alt="Swift Boots"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7152,6 +7319,7 @@
                                 alt="Rapid Boots"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7168,6 +7336,7 @@
                                 alt="Arcane Boots"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7184,6 +7353,7 @@
                                 alt="Magic Shoes"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7200,6 +7370,7 @@
                                 alt="Tough Boots"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7216,6 +7387,7 @@
                                 alt="Warrior Boots"
                                 loading="lazy"
                                 type="button"
+                                disabled
                               />
                               <figcaption
                                 class="text-uppercase small fw-bold text-center text-truncate text-primary mt-2"
@@ -7285,18 +7457,22 @@
     </main>
     <!-- MY JAVASCRIPT FOR HORIZONTAL SCROLL OF HEROES NAV AND EQUIPMENT NAV  -->
     <script>
-      const mouseWheel = document.querySelector(".hidden-scrollbar");
+      const mouseWheel = document.querySelectorAll(".hidden-scrollbar");
 
-      mouseWheel.addEventListener("wheel", function (e) {
-        const speed = 20; // How many pixels to scroll
+      mouseWheel.forEach(mw => {
+        mw.addEventListener("wheel", function (e) {
+          const speed = 20; // How many pixels to scroll
+          console.log(this.id)
+          if (e.deltaY > 0)
+            // Scroll right
+            this.scrollLeft += speed;
+          // Scroll left
+          else this.scrollLeft -= speed;
+          //e.preventDefault();
+        });
+      })
 
-        if (e.deltaY > 0)
-          // Scroll right
-          mouseWheel.scrollLeft += speed;
-        // Scroll left
-        else mouseWheel.scrollLeft -= speed;
-        e.preventDefault();
-      });
+      
     </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script

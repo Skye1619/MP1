@@ -106,8 +106,9 @@ footer button > img {
   background: red;
   filter: grayscale(100%);
 }
-.hero-icons img[disabled]:hover {
+.hero-icons img[disabled]:hover, .equipment-tab img[disabled]:hover {
   border: unset !important;
+  cursor: unset;
 }
 
 /* GALLERY MAIN BODY NAV-BAR */
@@ -162,6 +163,24 @@ footer button > img {
 }
 .equipment-tab > li > figure > img:hover {
   border: 5px solid blue !important;
+}
+.equipment-tab img[disabled] {
+  filter: grayscale(100%);
+}
+
+/* EQUIPMENT CARD */
+.equipment-tab .card {
+  background: radial-gradient(circle, rgba(32, 28, 69, 0.6) 0%, hsla(240, 100%, 28%, .6) 100%), url("cube.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.truncate-2 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
 }
 
 /* MEDIA QUERIES */
