@@ -7462,7 +7462,6 @@
       mouseWheel.forEach(mw => {
         mw.addEventListener("wheel", function (e) {
           const speed = 20; // How many pixels to scroll
-          console.log(this.id)
           if (e.deltaY > 0)
             // Scroll right
             this.scrollLeft += speed;
