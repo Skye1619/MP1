@@ -1,0 +1,55 @@
+/* HEADER CSS */
+.head-bg {
+  background: linear-gradient(
+    180deg,
+    hsla(246, 42%, 19%, 1) 0%,
+    hsla(240, 100%, 28%, 1) 100%
+  );
+}
+.navbar-toggler-icon {
+  color: blue;
+}
+.navbar-nav > li > a {
+  color: whitesmoke !important;
+}
+
+/* MAIN TAG CSS */
+.about-main {
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(rgba(37, 37, 107, 0.5), rgba(0, 0, 255, 0.5)),
+    url("https://www.pockettactics.com/wp-content/uploads/2021/01/mobile-legends-wallpaper-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel {
+  width: 100vw;
+}
+.gameplay-container {
+  background: linear-gradient(transparent 10%, rgb(0, 0, 100) 50%);
+}
+
+/* FOOTER CSS */
+footer {
+  background: rgb(0, 0, 100);
+}
+.icon-background {
+  position: absolute;
+  width: 180px;
+  height: 150px;
+  background: green;
+  border-radius: 10%;
+  transform: rotate(35deg);
+  top: -80px;
+  left: -60px;
+  opacity: 10%;
+}
+
+
+/* CUSTOM MEDIA QUERY FOR CAROUSEL */
+@media (min-width: 992px) {
+  .carousel {
+    width: 60vw;
+  }
+}

@@ -1,0 +1,198 @@
+
+/* HTML TAGS SELECTOR */
+body {
+  overflow: hidden;
+}
+p {
+  margin: none !important;
+}
+button {
+  border: none;
+  background: transparent !important;
+}
+figcaption {
+  font-size: 10px !important;
+}
+figure {
+  width: 60px;
+  height: 80px;
+}
+
+/* SELECTOR FOR HOME.HTML MAIN DISPLAY BACKGROUND */
+.main-display {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(
+    circle,
+    hsla(240, 100%, 28%, .8) 0%,
+    hsla(247, 97%, 13%, .7) 100%
+  );
+  background-image: url("https://wallpapers.com/images/featured-full/mobile-legends-v0u46grjbqc6h9ga.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* SELECTOR FOR GALLERY DISPLAY BACKGROUND */
+.main-hero-icons {
+  height: 100vh;
+  width: 100vw;
+  padding: 60px 10px;
+  background: radial-gradient(
+    circle,
+    hsla(240, 100%, 28%, .8) 0%,
+    hsla(247, 97%, 13%, .7) 100%
+  ), url("ml-background.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
+  position: relative;
+}
+
+/* NAV BAR SELECTORS FOR HOME AND GALLERY */
+.head-bg {
+  background: linear-gradient(
+    180deg,
+    hsla(246, 42%, 19%, 1) 0%,
+    hsla(240, 100%, 28%, 1) 100%
+  );
+}
+.navbar-toggler-icon {
+  color: blue;
+}
+.navbar-nav > li > a {
+  color: whitesmoke !important;
+}
+
+/* FOOTER / LEFT BAR SELECTORS */
+.left-bar {
+  color: antiquewhite;
+  margin: none;
+  background: radial-gradient(
+    circle,
+    hsl(240, 100%, 28%) 0%,
+    hsla(246, 42%, 19%, 1) 100%
+  );
+}
+footer button {
+  margin: 0 10px;
+}
+footer button:hover {
+  opacity: 80%;
+}
+footer button.active {
+  background: green !important;
+}
+footer button > img {
+  width: 32px;
+  height: 32px;
+}
+
+/* GALLERY MAIN BODY SELECTOR */
+.hero-icons > li > figure > img {
+  width: 60px;
+  height: 60px;
+  transition-duration: 200ms;
+}
+.hero-icons figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-icons > li > figure > img:hover {
+    border: 5px solid blue !important;
+}
+.hero-icons img[disabled] {
+  background: red;
+  filter: grayscale(100%);
+}
+.hero-icons img[disabled]:hover {
+  border: unset !important;
+}
+
+/* GALLERY MAIN BODY NAV-BAR */
+.main-body button.active {
+  border: none !important;
+  color: blue !important;
+  border-bottom: 5px solid blue !important;
+}
+.nav-tabs {
+  border-bottom: 2px solid blue !important;
+}
+.tab-pane {
+  text-decoration: none !important;
+}
+
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* GALLERY MAIN BODY HERO CARDS SELECTOR */
+.hero-card {
+  background-image: url("card-bg.jpg");
+  background-size: cover;
+}
+.truncate-4 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+}
+.skills-div {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+.skills-div img {
+  width: 50px;
+  height: 50px;
+}
+.skill-fig {
+  width: 50px;
+  height: auto;
+}
+
+/* EQUIPMENT TAB */
+.equipment-tab img {
+  width: 60px;
+  height: 60px;
+  transition-duration: 200ms;
+}
+.equipment-tab > li > figure > img:hover {
+  border: 5px solid blue !important;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+  /* FOOTER / SIDEBAR */
+  footer {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    left: 0;
+  }
+  .left-bar {
+    height: 100%;
+    flex-direction: column !important;
+    align-items: center;
+    background: radial-gradient(
+    circle,
+    hsla(240, 100%, 28%, .8) 0%,
+    hsla(246, 42%, 19%, .5) 100%
+  );
+  }
+  .left-icon-div:hover {
+    width: 80% !important;
+  }
+
+  /* HEROES DISPLAY SECTION */
+  .main-body {
+    margin-left: 200px;
+  }
+  .truncate-4 {
+    -webkit-line-clamp: 4;
+  }
+}
