@@ -1,3 +1,8 @@
+
+body {
+  background: rgb(0, 0, 100);
+}
+
 /* HEADER CSS */
 .head-bg {
   background: linear-gradient(
@@ -31,9 +36,6 @@
 }
 
 /* FOOTER CSS */
-footer {
-  background: rgb(0, 0, 100);
-}
 .icon-background {
   position: absolute;
   width: 180px;
